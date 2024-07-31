@@ -392,6 +392,398 @@
 // }
 // myfunc();
  
+// DOM manipulation
+
+// let ans = document.getElementsByClassName("mydiv")[0];
+// ans.innerText = " I love u babe " ;
+// ans.style.backgroundColor = "red";
+// ans.style.color = "white";
+// ans.style.textAlign = "center";
+
+// ans.setAttribute("class", "newclass");
+
+// let output = document.getElementsByClassName("mydiv")[0];
+// output.innertext = "I love u babe";
+// output.style.backgroundColor = "red";
+// output.style.color = "white";
+// output.style.textAlign = "center";
+// output.style.padding = "10px";
+
+// let show = document.getElementsByTagName("span")[0];
+// show.innerText = "I love u babe";
+// show.style.backgroundColor = "green";
+// show.style.color = "orange";
+
+// // let h2 = document.createElement("h2");
+// // h2.innerText = "Task1";
+// // document.body.append(h2);
+
+// function AddTask(){
+// let h2 = document.createElement("h2");
+// h2.innerText = "Task1";
+// document.body.prepend(h2);
+// }
+
+// function RemoveTask(){
+//     let div = document.querySelector("h2")
+//     div.remove();
+// }
+
+
+// let btnAdd =  document.querySelector("#btn");
+// btnAdd.style.backgroundColor = "blue";
+// btnAdd.style.color = "orange";
+// btnAdd.style.padding = "20px";
+// btnAdd.style.border = "none";
+// btnAdd.style.cursor = "pointer";
+// btnAdd.onclick =  AddTask;
+
+// let btnRemove =  document.querySelectorAll("button")[1];
+// btnRemove.style.backgroundColor = "blue";
+// btnRemove.style.color = "orange";
+// btnRemove.style.padding = "20px";
+// btnRemove.style.border = "none";
+// btnRemove.style.cursor = "pointer";
+// btnRemove.onclick = RemoveTask;
+
+// ADvance Array method
+
+// function Add(a,b)=> {
+//     let result = a + b;
+//     return result;
+
+
+// };
+// let output = Add(4,5);
+// console.log(output);
+
+// let arr = [4,5,2,3,7,8,9]
+// // find
+
+// let ans =arr.reduce((accum , curValue) =>  accum + curValue );
+ 
+   
+
+
+// console.log(ans);
+
+// const product = [
+//     {id:1, name:"Goldstar",price:9000, instock:true},
+//     {id:2, name:"Air force",price:10000, instock:false},
+//     {id:3, name:"Vans",price:6000, instock:true},
+//     {id:4, name:"Goldstar",price:9000, instock:false}, 
+//     {id:5, name:"Sandals",price:3000, instock:true},
+
+// ];
+
+// let output = product.some= product.some((value)=>!value.instock);
+// console.log(output);
+
+
+// every
+// console.log(ans);
+
+// const product = [
+//     {id:1, name:"Goldstar",price:9000, instock:true},
+//     {id:2, name:"Air force",price:10000, instock:false},
+//     {id:3, name:"Vans",price:6000, instock:true},
+//     {id:4, name:"Goldstar",price:9000, instock:false}, 
+//     {id:5, name:"Sandals",price:3000, instock:true},
+
+// ];
+
+// let output = product.every= product.every((value)=>!value.instock);
+// console.log(output);
+
+
+
+// some
+// console.log(ans);
+
+// const product = [
+//     {id:1, name:"Goldstar",price:9000, instock:true},
+//     {id:2, name:"Air force",price:10000, instock:false},
+//     {id:3, name:"Vans",price:6000, instock:true},
+//     {id:4, name:"Goldstar",price:9000, instock:false}, 
+//     {id:5, name:"Sandals",price:3000, instock:true},
+
+// ];
+
+// let output = product.some= product.some((value)=>!value.instock);
+// console.log(output);
+
+// // forEach
+// console.log(ans);
+
+// const product = [
+//     {id:1, name:"Goldstar",price:9000, instock:true},
+//     {id:2, name:"Air force",price:10000, instock:false},
+//     {id:3, name:"Vans",price:6000, instock:true},
+//     {id:4, name:"Goldstar",price:9000, instock:false}, 
+//     {id:5, name:"Sandals",price:3000, instock:true},
+
+// ];
+
+// let output = product.forEach= product.forEach((value)=>!value.instock);
+// console.log(output);
+
+
+// map
+// console.log(ans);
+
+// const product = [
+//     {id:1, name:"Goldstar",price:9000, instock:true},
+//     {id:2, name:"Air force",price:10000, instock:false},
+//     {id:3, name:"Vans",price:6000, instock:true},
+//     {id:4, name:"gtr",price:9000, instock:false}, 
+//     {id:5, name:"Sandals",price:3000, instock:true},
+
+// ];
+
+// let output = product.map= product.map((value)=> value.name);
+// console.log(output);
+// let h1 = document.createElement("h1");
+// h1.innerHTML = output;
+// document.body.append(h1);
+
+// reduce nethod
+// console.log(ans);
+
+// const product = [
+//     {id:1, name:"Goldstar",price:9000, instock:true},
+//     {id:2, name:"Air force",price:10000, instock:false},
+//     {id:3, name:"Vans",price:6000, instock:true},
+//     {id:4, name:"gtr",price:9000, instock:false}, 
+//     {id:5, name:"Sandals",price:3000, instock:true},
+
+// ];
+
+// let output = product.reduce= product.reduce((total,curValue)=> total + curValue.price, 0);
+// console.log(output);
+
+
+// event list
+
+// const heading =  document.getElementById("heading");
+// const BOX1  = document.getElementById("box1");
+// const addBtn = document.getElementById("btnAdd");
+// let input = document.getElementById("newInput")
+
+// // console.log(heading);
+// // console.log(box1);
+// // console.log(btnAdd);
+// btnAdd.addEventListener("click", () =>{
+//     console.log("clicked");
+//     heading.innerText = "Who are u";
+//     heading.style.backgroundColor = "yellow";
+//     heading.style.color ="white";
+//     heading.style.padding="20px";
+// });
+//  addBtn.addEventListener("dblclick", ()=>{
+//     addBtn.style.backgroundColor ="red";
+//      addBtn.style.color = "white";
+//      addBtn.style.padding= "20px";
+//      addBtn.style.border ="none";
+//  })
+
+
+// input.addEventListener("change", (e) => {
+//     console.log(e.target.value);
+// });
+
+
+// const input = document.getElementById("myinput");
+// const addbtn= document.getElementById("addbtn");
+// const removeBtn = document.getElementById("removeBtn");
+
+// const myFunc = ()=>{
+//     localStorage.setItem("key1",JSON.stringify({name:"Bikram Shrestha",age: 24,}));
+//     localStorage.setItem("key1" ,
+//         JSON.stringify({name: "Bikram Don", age: 24, isMarried:true}));
+
+// };
+// addbtn.addEventListener("click",myFunc);
+// removeBtn.addEventListener("click",()=> {
+//     localStorage.clear();
+// });
+// if(localStorage.getItem("key1")){
+//     alert(localStorage.getitem("key1"))
+// };
+
+// Math(Object)
+// console.log(Math.random());
+// // pow
+// console.log(Math.pow(2,6));
+// // square
+// console.log(Math.sqrt(25));
+
+// round
+// let num = 4.7;
+// let result=Math.round(num);
+// console.log(result);
+
+// floor
+// let num = 4.2;
+// let result=Math.floor(num);
+//  console.log(result);
+
+// ceil
+//  let num = 4.10000000000000000000;
+//  let result=Math.ceil(num);
+// console.log(result);
+
+// trunc
+// let num = 4.1300000;
+// let result=Math.trunc(num);
+// console.log(result);
+
+//abs
+// function AbsValue(a,b){
+//     return Math.abs(a - b);
+// }
+
+// let result = AbsValue(3 ,7);
+// console.log(result);
+
+// console.log(Math.PI)
+
+// // Area of circleS
+// function AreaofCircle(radious){
+//     return Math.PI * radious * radious;
+
+// }
+
+// let result = AreaofCircle(5);
+// console.log(result);
+
+// OTP
+// function generateOTP() {
+//     return Math.floor(1000000 + Math.random()*9000000);
+    
+// }
+// let output = generateOTP();
+// console.log(output);
+
+// Date
+// const now = new Date();
+// console.log(now);
+
+
+// let year = now.getFullYear();
+// console.log(year);
+
+
+// let month = now.getMonth();
+// console.log(month);
+
+
+// let day = now.getDay();
+// console.log(day);
+
+
+// let hours = now.getHours();
+// console.log(hours);
+
+// settimeout
+
+// setTimeout( () =>{
+//     console.log("SUARYA AIRLINES HOTEST CRASH");
+
+// }, 2000);
+
+// let intervalId = setInterval(() => {
+//     console.log("SUARYA AIRLINES HOTEST CRASH");
+
+// }, 1000);
+
+// setTimeout(() =>{
+//     clearInterval(intervalId);
+// }, 5000);
+
+// clock
+
+// function updateClock(){
+//   ;let clock=  document.querySelector(".clock");
+//     let now = new Date()
+//  let hours = now.getHours().toString().padStart(2,"0");
+//  let minutes = now.getMinutes().toString().padStart(2,"0");
+//  let seconds = now.getSeconds().toString().padStart(2,"0");
+
+//  clock.innerHTML =`${hours}:${minutes}:${seconds}`;
+// }
+
+// // setInterval(updateClock, 1000);
+
+// function BankAccount(costumerName, balance){
+//   this.costumerName = costumerName;
+//   this.balance = balance;
+//   this.accountNumber = Date.now();
+// }
+
+// const ramAccount = new BankAccount("Ram Thapa", 5000);
+// const sitaAccount = new BankAccount("Sita Devi", 9000);
+
+// console.log(ramAccount);
+// console.log(sitaAccount);
+
+// function Array(){
+
+// }
+// new Array()
+
+
+// class(OOP)
+class BankAccount{
+  constructor(customerName,balance){
+    this.customerName = customerName;
+    this.balance = balance;
+    this.accountNumber = Date.now();
+   }
+   deposit(amount){
+    this.balance +=amount;
+   }
+   withdraw(amount){
+    this.balance -=amount;
+   }
+  }
+const sohanAccount = new BankAccount("Sohan Maharjan", 33000000);
+const PutaliAccount = new BankAccount("Putali ", 31000000);
+console.log(sohanAccount.balance);
+sohanAccount.deposit(500000);
+PutaliAccount.deposit(300);
+PutaliAccount.withdraw(30000);
+
+console.log(sohanAccount, PutaliAccount);
+
+class SavingAccount extends BankAccount {
+  constructor(customerName,balance){
+     super(customerName,balance);
+     this.transactionLimit = 50000
+   }
+  takePersonalLoan(amount, taxRate){
+    console.log(`You Personal loan is:${amount}`);
+    let ans = amount + (amount * taxRate) /100;
+    console.log(`You Personal loan with Interest is:${ans}`);
+  }
+}
+const sohanAccount  = new SavingAccount("Sohan Maharjan", 33000000);
+const PutaliAccount = new SavingAccount("Putali ", 31000000);
+PutaliAccount.takePersonalLoan(90000, 12);
+console.log(PutaliAccount);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
