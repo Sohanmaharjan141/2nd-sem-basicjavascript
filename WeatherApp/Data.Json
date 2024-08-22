@@ -1,0 +1,13 @@
+{
+    "person":{
+        "name":"John Wick",
+        "age":43,
+        "ismarried":true
+    },
+    "product":[{
+        "name":"Product1",
+        "price":10.99,
+        "description":"This is Product 1",
+        "inStock":true
+    }]
+}
